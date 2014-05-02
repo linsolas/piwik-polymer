@@ -1,0 +1,28 @@
+<polymer-element name="piwik-tracker" attributes="piwikUrl,siteId">
+    <script>
+        var module = (function() {
+            return {
+                ready: function () {
+                    var _paq = _paq || [];
+                    _paq.push(["trackPageView"]);
+                    _paq.push(["enableLinkTracking"]);
+                    var _piwikUrl = this.piwikUrl;
+                    var _siteId = this.siteId;
+                    (function () {
+                        var u = (("https:" == document.location.protocol) ? "https" : "http") + "://" + _piwikUrl + "/piwik/";
+                        console.log('U = %s', u);
+                        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+                        _paq.push(["setSiteId", _siteId]);
+                        var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
+                        g.type = "text/javascript";
+                        g.defer = true;
+                        g.async = true;
+                        g.src = u + "piwik.js";
+                        s.parentNode.insertBefore(g, s);
+                    })();
+                }
+            }
+        })();
+        Polymer('piwik-tracker', module);
+    </script>
+</polymer-element>
