@@ -1,0 +1,15 @@
+{
+  "name": "piwik-tracker",
+  "version": "0.0.1",
+  "authors": [
+    "Romain Linsolas <linsolas@gmail.com>"
+  ],
+  "main": "src/piwik-element.html",
+  "description": "A Piwik tracker for your website - http://www.piwik.org",
+  "license": "Apache v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
