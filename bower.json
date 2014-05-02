@@ -4,6 +4,11 @@
   "authors": [
     "Romain Linsolas <linsolas@gmail.com>"
   ],
+  "keywords": [
+    "polymer",
+    "piwik",
+    "web-component"
+  ],
   "main": "src/piwik-element.html",
   "description": "A Piwik tracker for your website - http://www.piwik.org",
   "license": "Apache v2",
@@ -11,5 +16,9 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.2.3",
+    "polymer": "Polymer/polymer#~0.2.3"
+  }
 }
