@@ -1,7 +1,7 @@
-<piwik-tracker>
-===============
+Piwik tracker
+=============
 
-The Piwik (http://www.piwik.org) tracker made with [Google Polymer](http://www.polymer-project.org)
+The Piwik (http://www.piwik.org) tracker made with [Google Polymer](http://www.polymer-project.org) as a web component.
 
 
 Usage
@@ -27,4 +27,10 @@ Finally, on your page, add the component `<piwik-tracker>` like that:
 
 * `piwikUrl` points to the URL of the Piwik server (without `http` or `https`, as it will be automatically added).
 * `siteId` is the ID of the site that is currently monitored.
- 
+
+
+Support
+=======
+
+Note that Polymer is aimed to be supported by recents browsers, and has a support for IE9+.
+More information on their [FAQ](http://www.polymer-project.org/resources/faq.html#browsersupport)
