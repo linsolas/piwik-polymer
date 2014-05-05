@@ -1,13 +1,14 @@
 {
   "name": "piwik-tracker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Romain Linsolas <linsolas@gmail.com>"
   ],
   "keywords": [
     "polymer",
     "piwik",
-    "web-component"
+    "web-component",
+    "web-components"
   ],
   "main": "src/piwik-element.html",
   "description": "A Piwik tracker for your website - http://www.piwik.org",
